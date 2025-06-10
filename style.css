@@ -12,3 +12,16 @@ img{
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+#rich{background-color: red;
+  border-style: ridge
+} 
+#jean{ background-color: blue;
+  border-style: inset}
+  
+#ballet{background-color: pink;
+border-style: groove}
+
+.dream{
+font-size: 50px  
+  
+}

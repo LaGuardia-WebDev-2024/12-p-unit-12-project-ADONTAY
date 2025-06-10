@@ -1,18 +1,17 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ y ] $() Select by Element, ID AND Class 
+[ y ] Use Three Different jQuery Methods 
+[ y ] Add Five CSS Declarations
+[ y ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
+[ y ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
 [ no ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -25,21 +24,38 @@ Select ONE Additional
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <h1 class="bigmem">My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p id="rich">I once had an amazing dream that I was rich and happy!</p>
+        <img
+          src="https://i.pinimg.com/736x/80/5b/51/805b51523d643d78c37fbd5ccbc23983.jpg"
+          width="200"
+        />
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p id="ballet">
+          I had a dream that i was a real ballet dancer performing at NYCB. It
+          was stunning and stellar
+        </p>
+        <img
+          src="https://i.etsystatic.com/40292174/r/il/ea5cfe/4782263969/il_570xN.4782263969_mz2i.jpg"
+          width="150"
+        />
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p id="jean">
+          I had another dream tha everything in the was in denim jean form
+        </p>
+        <img
+          width="200"
+          src="https://miro.medium.com/v2/resize:fit:880/0*tIS7jYpxZjODdt7z.png"
+        />
       </li>
     </ol>
 
@@ -56,6 +72,14 @@ Select ONE Additional
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
       });
+
+      $("h1").text("MEMORIES!!!!");
+      $("#mem1").text("MEMORY NUM 1");
+      $(".bigmem").text("THE BEST MEMORIES");
+      $("p").css("color", "white");
+      $("h1").html("I CANT TELL YOU MY CRAZIEST DREAMS BUT HERE ARE SOME AMAZING ONES",);
+      
+      $("p").addClass("dream")
     </script>
   </body>
 </html>
